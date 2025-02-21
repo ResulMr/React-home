@@ -28,7 +28,7 @@ function App() {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {characters.map((character) => (
           <div className="bg-black rounded-lg shadow-lg overflow-hidden">
-            <div className="p-3 border-2 bor border-solid">
+            <div className="p-3 border-2 border-gray-600 border-solid">
             <img 
               src={character.image}
               alt={character.name}
