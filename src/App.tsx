@@ -2,7 +2,7 @@ import  { useState, useEffect } from 'react';
 
 function App() {
   const [characters, setCharacters] = useState([]);
-  const [loading, setLoading] = useState(true);
+ 
 
 
 
@@ -11,14 +11,12 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setCharacters(data.results);
-        setLoading(false);  
+         
       })
       
   }, []); 
 
-  if (loading) {
-    return <div className="text-center py-20 text-xl">Loading...</div>;
-  }
+
 
 
 
